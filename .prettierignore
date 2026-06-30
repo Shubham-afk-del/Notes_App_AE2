@@ -1,0 +1,10 @@
+# Generated and vendored files
+node_modules
+package-lock.json
+.svelte-kit
+build
+
+# Runtime data and submission documents
+data
+submission-docs
+.remember

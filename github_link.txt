@@ -1,0 +1,5 @@
+Project Repository Link
+
+The complete source code for the Notes App project is available on GitHub. The repository includes the final project files, application structure, frontend and backend code, database-related files, and supporting project resources.
+
+GitHub Repository: https://github.com/Shubham-afk-del/Notes.app.git

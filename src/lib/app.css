@@ -1,0 +1,96 @@
+@import 'bulma/css/bulma.css';
+
+.skip-link {
+	position: absolute;
+	left: -999px;
+	top: 0;
+	z-index: 100;
+	background: white;
+	padding: 0.5rem 1rem;
+}
+.skip-link:focus {
+	left: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+	outline: 3px solid royalblue;
+	outline-offset: 2px;
+}
+
+/* WCAG 1.4.1: inline links in text must be distinguishable without relying on colour */
+main p a,
+.content a {
+	text-decoration: underline;
+}
+
+.notes-list,
+.categories-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-bg {
+	background-color: midnightblue;
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/images/hero.svg');
+	background-size: cover;
+	background-position: center;
+}
+.hero-bg .title,
+.hero-bg .subtitle {
+	color: white;
+}
+
+.auth-bg {
+	background-color: darkslateblue;
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/login.svg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 8px;
+	padding: 3rem 1rem;
+	display: flex;
+	justify-content: center;
+}
+.auth-bg .box {
+	width: 100%;
+	max-width: 30rem;
+}
+
+.app-bg {
+	background-image: url('/images/app-light.svg');
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+}
+[data-theme='dark'] .app-bg {
+	background-image: url('/images/app-dark.svg');
+}
+
+summary {
+	cursor: pointer;
+}
+
+.button,
+.note-card,
+.navbar-item {
+	transition:
+		background-color 0.15s ease,
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
+}
+@media (prefers-reduced-motion: no-preference) {
+	.button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	}
+	.note-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+	}
+}

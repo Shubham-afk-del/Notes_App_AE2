@@ -1,0 +1,21 @@
+# Dependencies and build output
+node_modules
+/build
+/.svelte-kit
+/package
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local SQLite database files (created at runtime)
+/data/*.db
+/data/*.db-shm
+/data/*.db-wal
+
+.DS_Store
+
+# Report PDFs are submitted to Turnitin separately, not in the code repo
+submission-docs/
+
